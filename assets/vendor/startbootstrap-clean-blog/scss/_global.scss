@@ -74,3 +74,32 @@ img::-moz-selection {
     color: $white;
     background: transparent;
 }
+
+/* Media Queries for Small Devices */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px; /* Adjust the base font size */
+    }
+
+    .section-heading {
+        font-size: 24px; /* Scale down the section headings */
+    }
+
+    p {
+        margin: 20px 0; /* Adjust paragraph margins for better spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px; /* Further reduce font size for very small screens */
+    }
+
+    .section-heading {
+        font-size: 20px; /* Smaller font size for section headings */
+    }
+
+    .caption {
+        font-size: 12px; /* Adjust caption size */
+    }
+}

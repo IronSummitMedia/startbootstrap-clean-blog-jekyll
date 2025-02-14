@@ -29,6 +29,19 @@
         }
     }
 
+    /* Media Queries for Smaller Devices */
+    @media (max-width: 768px) {
+        .navbar-brand img {
+            height: 40px; /* Reduce logo size for tablets or medium devices */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .navbar-brand img {
+            height: 30px; /* Further reduce logo size for smartphones */
+        }
+    }
+
     @media only screen and (min-width: 992px) {
         border-bottom: 1px solid transparent;
         background: transparent;
@@ -74,7 +87,7 @@
         &.is-fixed {
             /* when the user scrolls down, we hide the header right above the viewport */
             position: fixed;
-            top: -67px;
+            top: -87px;
             -webkit-transition: -webkit-transform 0.2s;
             -moz-transition: -moz-transform 0.2s;
             transition: transform 0.2s;

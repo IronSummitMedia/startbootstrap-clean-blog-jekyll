@@ -1,0 +1,40 @@
+---
+layout: page
+title: Publications
+background: '/img/bg-post.jpg'
+---
+
+<div>
+  <h1>International Journals</h1>
+  <table id="pubIntlJournal" class="display"></table>
+
+</div>
+
+<div>
+  <h1>International Conferences</h1>
+  <table id="pubIntlConf" class="display"></table>
+
+</div>
+
+<div>
+  <h1>Domestic Journals</h1>
+  <table id="pubDomJournal" class="display"></table>
+
+</div>
+
+<div>
+  <h1>Domestic Conferences</h1>
+  <table id="pubDomConf" class="display"></table>
+
+</div>
+
+
+
+
+<script src="{{"/assets/bib-list-min.js" | relative_url }}"></script>
+<script lang="javascript">
+  bibtexify("/assets/bibtex/intl-journal.bib", "pubIntlJournal");
+  bibtexify("/assets/bibtex/intl-conf.bib", "pubIntlConf");
+  bibtexify("/assets/bibtex/dom-conf.bib", "pubDomConf");
+  bibtexify("/assets/bibtex/dom-journal.bib", "pubDomJournal");
+</script>

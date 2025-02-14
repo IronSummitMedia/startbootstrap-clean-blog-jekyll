@@ -1,0 +1,41 @@
+span.undefined { color:red; }
+.bibtable {width:100%; margin: 0 auto; clear: both;}
+.bibtable thead { display: none; }
+.bibtable .sorting_1, .bibtable .sorting_2 { display: none;}
+.bibchart { display: none; }
+.clear {clear:both;}
+.year { position: relative; height: 100%; border-bottom: 1px solid black; display: inline-block;}
+.yearlabel { position: absolute; bottom: -20px; text-align: center; width: 100%; font-size: smaller;}
+.pub { border: 1px solid white; background-color: #eee; }
+.inproceedings { background-color: #ccf; }
+.article { background-color: #beb; }
+.inbook { background-color: #eaa; }
+.phdthesis { background-color: #999; }
+.unpublished { background-color: #eae; }
+.mastersthesis { background-color: #eea; }
+.techreport { background-color: #b77; }
+.proceedings { background-color: #9494ff; }
+.book { background-color: #ed7878; }
+// .legend .pub { width: 10px; height: 10px; display: inline-block; margin: 0 5px 0 15px;}
+.legend { display: none; }
+table.display thead th { padding: 3px 18px 3px 10px; border-bottom: 1px solid black; border-top: 1px solid black; font-weight: bold; cursor: pointer; cursor: hand; }
+table.display tfoot th { padding: 3px 10px; border-top: 1px solid black; font-weight: bold; }
+table.display tr { display:list-item; margin: 10px 0  }
+table.display tr > * { display: inline }
+table.display td { padding: 3px 0; }
+table.display td.center { text-align: center; }
+table.display { margin: 24px 0; }
+.dataTables_info { display: none; }
+.dataTables_filter { display: none; }
+.sorting_asc { background: url('lib/images/sort_asc.png') no-repeat center right; }
+.sorting_desc { background: url('lib/images/sort_desc.png') no-repeat center right; }
+.sorting { background: url('lib/images/sort_both.png') no-repeat center right; }
+.sorting_asc_disabled { background: url('lib/images/sort_asc_disabled.png') no-repeat center right; }
+.sorting_desc_disabled { background: url('lib/images/sort_desc_disabled.png') no-repeat center right; }
+// tr.odd { background-color: #eee; }
+// tr.even { background-color: white; }
+div.hidden { display: none;}
+div.bibinfo { width: 80%; position: fixed; top: 100px; left: 10%; background-color: #bbb; border: 3px solid #fff; padding: 10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; border-radius:10px; z-index: 50;}
+#shutter { background-color: #555; opacity: 0.7; width:100%; height: 100%; position: fixed; top: 0; left:0; z-index: 20;}
+a.bibclose { background-color: #BBBBBB; border: 3px solid #FFFFFF; color: black; float: left; font-size: 20px; height: 20px; left: -25px; line-height: 20px; padding: 3px; position: relative; text-align: center; text-decoration: none; top: -25px; width: 20px; -moz-border-radius:15px; -webkit-border-radius:15px; -o-border-radius:15px; border-radius:15px; }
+div.bibinfo pre { clear:both; }

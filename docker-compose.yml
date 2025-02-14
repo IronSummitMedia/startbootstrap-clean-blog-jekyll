@@ -1,0 +1,10 @@
+services:
+  jekyll:
+    build: .
+    volumes:
+      - .:/srv/jekyll
+      - ./vendor/bundle/:/usr/local/bundle
+    ports:
+      - "4000:4000"
+    # command: bundle install
+    command: bundle exec jekyll serve --watch --force_polling --verbose --livereload --host 0.0.0.0

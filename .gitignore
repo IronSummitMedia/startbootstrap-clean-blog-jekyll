@@ -3,3 +3,7 @@ _site
 node_modules
 Gemfile.lock
 *.gem
+.idea
+.DS_Store
+.jekyll-cache
+vendor/bundle

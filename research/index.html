@@ -1,0 +1,24 @@
+---
+layout: page
+title: Research Areas
+background: '/img/bg-post.jpg'
+---
+
+{% assign research = site.research | sort: 'title' %}
+{% for area in research %}
+<article class="post-preview">
+    <a href="{{ area.url | prepend: site.baseurl | replace: '//', '/' }}">
+        <h2 class="post-title">{{ area.title }}</h2>
+        <h3 class="post-subtitle">{{ area.subtitle }}</h3>
+        <!--    {% if post.subtitle %}-->
+        <!--    <h3 class="post-subtitle">{{ post.subtitle }}</h3>-->
+        <!--    {% else %}-->
+        <!--    <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>-->
+        <!--    {% endif %}-->
+    </a>
+    {% for keyword in area.keywords %}
+    <span class="badge badge-primary">{{ keyword }}</span>
+    {% endfor %}
+</article>
+
+{% endfor %}

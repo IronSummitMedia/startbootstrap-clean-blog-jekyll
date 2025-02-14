@@ -21,11 +21,15 @@ header.masthead {
     .page-heading,
     .post-heading,
     .site-heading {
-        padding: 200px 0 150px;
+        padding: 150px 0 150px;
         color: white;
 
-        @media only screen and (min-width: 768px) {
-            padding: 200px 0;
+        @media only screen and (max-width: 768px) {
+            padding: 100px 0 100px; // Reduce padding for medium devices
+        }
+
+        @media only screen and (max-width: 480px) {
+            padding: 80px 0 80px; // Further reduce padding for smaller devices
         }
     }
 
@@ -36,6 +40,14 @@ header.masthead {
         h1 {
             font-size: 50px;
             margin-top: 0;
+
+            @media only screen and (max-width: 768px) {
+                font-size: 40px; // Smaller font size for medium devices
+            }
+
+            @media only screen and (max-width: 480px) {
+                font-size: 30px; // Even smaller font size for small devices
+            }
         }
 
         .subheading {
@@ -45,11 +57,13 @@ header.masthead {
             display: block;
             margin: 10px 0 0;
             font-family: $headings-font-family;
-        }
 
-        @media only screen and (min-width: 768px) {
-            h1 {
-                font-size: 80px;
+            @media only screen and (max-width: 768px) {
+                font-size: 20px; // Smaller font size for medium devices
+            }
+
+            @media only screen and (max-width: 480px) {
+                font-size: 16px; // Even smaller font size for small devices
             }
         }
     }
@@ -57,6 +71,14 @@ header.masthead {
     .post-heading {
         h1 {
             font-size: 35px;
+
+            @media only screen and (max-width: 768px) {
+                font-size: 30px; // Reduce font size for medium devices
+            }
+
+            @media only screen and (max-width: 480px) {
+                font-size: 25px; // Further reduce font size for small devices
+            }
         }
 
         .meta,
@@ -70,6 +92,14 @@ header.masthead {
             font-weight: 600;
             margin: 10px 0 30px;
             font-family: $headings-font-family;
+
+            @media only screen and (max-width: 768px) {
+                font-size: 20px; // Smaller font size for medium devices
+            }
+
+            @media only screen and (max-width: 480px) {
+                font-size: 16px; // Even smaller font size for small devices
+            }
         }
 
         .meta {
@@ -78,18 +108,16 @@ header.masthead {
             font-style: italic;
             font-family: $font-family-base;
 
+            @media only screen and (max-width: 768px) {
+                font-size: 18px; // Adjust meta font size for medium devices
+            }
+
+            @media only screen and (max-width: 480px) {
+                font-size: 16px; // Further adjust meta font size for small devices
+            }
+
             a {
                 color: $white;
-            }
-        }
-
-        @media only screen and (min-width: 768px) {
-            h1 {
-                font-size: 55px;
-            }
-
-            .subheading {
-                font-size: 30px;
             }
         }
     }
